@@ -1,0 +1,21 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.lojaHead{
+  width: 100vw;
+  height: 20vh;
+  background-color: brown;
+  position: relative;
+}
+.seçao1{
+  position: relative;
+  top: 80px;
+  left: 20px;
+}
+#headerSrc{
+  width: 60vw;
+  height: 3vh;
+   border-radius: 8px;
+}
