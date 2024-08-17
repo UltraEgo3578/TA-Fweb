@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 
 function Header(){
     const [header,setHeader] = useState('')
@@ -9,8 +10,9 @@ function Header(){
                 <h3>O Que Você Deseja Hoje?</h3>
                 <input id="headerSrc" type="text"></input>
             </section>
-            <section className="seçao2">
-
+            <section id="links">
+                <Link to='/login'>Login</Link>
+                <Link to='/shopcar'>Carrinho de Compras</Link>
             </section>
         </div>
     )
