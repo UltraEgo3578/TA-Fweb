@@ -1,6 +1,12 @@
-import { useState, useCallback, useMemo } from "react";
+import { Link } from "react-router-dom";
 
-function PageShop(){
-    const [items, setItems] = useState('')
-    const carrinho = useCallback(() =>{setItems(items)},[items])
+function PShopCar(){
+    return(
+        <div>
+            <ShopCar />
+            <Link to='/shopcar'>Shopcar</Link>
+        </div>
+    )
 }
+
+export default PShopCar;

@@ -1,8 +1,8 @@
 import './App.css';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import Header from './components/compHeader';
-import Login from './components/compLogin';
-import ShopCar from './components/compShopCar';
+import PHome from './pages/pageHome';
+import PLogin from './pages/pageLogin';
+import PShopCar from './components/compShopCar';
 
 function App() {
   return (
@@ -10,16 +10,11 @@ function App() {
       <header className='lojaHead'>
         <BrowserRouter>
           <Routes>
-            <Route path='/' element={<Header/>}></Route>
-            <Route path='/login' element={<Login/>}></Route>
-            <Route path='/shopcar' element={<ShopCar/>}></Route>
+            <Route path='/' element={<PLogin/>}></Route>
+            <Route path='/home' element={<PHome/>}></Route>
+            <Route path='/shopcar' element={<PShopCar/>}></Route>
           </Routes>
         </BrowserRouter>
-        <div className="container paineis">
-          <section>
-            
-          </section>
-        </div>
       </header>
     </div>
   );

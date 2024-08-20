@@ -1,19 +1,13 @@
-import { useState } from "react";
+import Login from "../components/compLogin";
+import { Link } from 'react-router-dom';
 
-function PageLogin(){
-    return(
+function PLogin() {
+    return (
         <div>
-            <div className='login'>
-                <h1>Login</h1>
-                    <div id="info">
-                        <h3>Username</h3>
-                        <input id='usuario' type='text'></input>
-                        <h3>Password</h3>
-                        <input id='senha' type='password'></input>
-                    </div>
-                <button id="log" type='button'>Login</button>
-            </div>
+            <Login />
+            <Link to='/shopcar'></Link>
         </div>
+
     )
 }
-export default PageLogin;
+export default PLogin;

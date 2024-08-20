@@ -31,6 +31,7 @@
 
 
 .container{
+  width: 100vw;
   background-color: cornsilk;
   align-items: center;
   display: flex;
@@ -40,11 +41,14 @@
   width: 19vw;
   height: 36vh;
   border-radius: 15px;
-  background: linear-gradient(to right, aquamarine, blue);
+  background: linear-gradient(darkred, cornsilk);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  top: 300px;
+  left: 400px;
 }
 .login h1{
   background-color: unset;
@@ -81,4 +85,39 @@
   border: groove black;
   border-radius: 6px;
   position: relative;
+}
+
+
+#items{
+  width: 40vw;
+  height: 40vh;
+  text-align: center;
+  position: relative;
+  top: 300px;
+  display: flex;
+  flex-direction: row;
+}
+#sandai{
+  width: 20vw;
+  height: 40vh;
+  margin: 10px;
+  background-color: antiquewhite;
+  position: relative;
+  left: 20px;
+}
+#zabuza{
+  width: 20vw;
+  height: 40vh;
+  margin: 10px;
+  background-color: antiquewhite;
+  position: relative;
+  left: 100px;
+}
+#note{
+  width: 20vw;
+  height: 40vh;
+  margin: 10px;
+  background-color: antiquewhite;
+  position: relative;
+  left: 200px;
 }
